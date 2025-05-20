@@ -1,0 +1,11 @@
+{
+  "name": "Qt6 C++ Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "sudo apt update && sudo apt install -y qt6-base-dev qt6-declarative-dev qt6-tools-dev-tools",
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-vscode.cmake-tools"
+  ]
+}
