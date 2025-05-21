@@ -4,21 +4,7 @@
 
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
-image:
-  file: .gitpod.Dockerfile
-
 tasks:
-  - init: cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
-    command: cmake --build build && ./example/bin/Debug/example
-
-vnc:
-  expose: true
-  width: 1280
-  height: 720
-
-ports:
-  - port: 6080
-    onOpen: open-preview
-    visibility: public
+  - init: cmake .
 
 
