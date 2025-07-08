@@ -358,6 +358,12 @@ FluObject{
             onTap: { navigationView.push(url) }
         }
         FluPaneItem{
+            title: qsTr("Theme Switcher")
+            menuDelegate: paneItemMenu
+            url: "qrc:/example/qml/page/T_ThemeSwitcher.qml"
+            onTap: { navigationView.push(url) }
+        }
+        FluPaneItem{
             title: qsTr("Typography")
             menuDelegate: paneItemMenu
             url: "qrc:/example/qml/page/T_Typography.qml"

@@ -13,6 +13,18 @@ FluObject{
     FluPaneItemSeparator{}
 
     FluPaneItem{
+        title:qsTr("Quick Theme Switch")
+        icon: FluTheme.dark ? FluentIcons.Brightness : FluentIcons.QuietHours
+        onTapListener:function(){
+            if(FluTheme.dark){
+                FluTheme.darkMode = FluThemeType.Light
+            }else{
+                FluTheme.darkMode = FluThemeType.Dark
+            }
+        }
+    }
+
+    FluPaneItem{
         title:qsTr("About")
         icon:FluentIcons.Contact
         onTapListener:function(){
